@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "start": "set NODE_ENV=local && npm run build-ts && npm run start-app",
-    "build-ts": "tsc",
+    "start": "npm run build-ts && npm run start-app",
+    "build-ts": "tsc --project ./",
     "start-app": "node dist/server.js"
   },
   "keywords": [],
