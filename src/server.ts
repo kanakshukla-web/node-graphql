@@ -12,6 +12,8 @@ import typeDefs from './schemas'
 import resolvers from './controllers';
 import connectToDb from './config/dbconfig';
 
+const PORT = process.env.SERVER_PORT || 3000;
+
 const connectServer = async () => {
     const server = new ApolloServer({
         typeDefs,
@@ -19,7 +21,7 @@ const connectServer = async () => {
     })
 
     const { url } = await startStandaloneServer(server, {
-        listen: { port: 4000 },
+        listen: { port: Number(PORT) },
     });
     console.log(`🚀  Server ready at: ${url}`);
 
