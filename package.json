@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\"",
     "postinstall": "npm install -g typescript",
     "start": "npm run build-ts && npm run start-app",
-    "build-ts": "tsc",
+    "build-ts": "npm run postinstall && tsc",
     "start-app": "node dist/server.js"
   },
   "keywords": [],
