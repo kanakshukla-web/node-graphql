@@ -5,8 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
+    "postinstall": "npm install -g typescript",
     "start": "npm run build-ts && npm run start-app",
-    "build-ts": "tsc --project ./",
+    "build-ts": "tsc",
     "start-app": "node dist/server.js"
   },
   "keywords": [],
