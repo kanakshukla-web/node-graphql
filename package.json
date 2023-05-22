@@ -5,9 +5,10 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "postinstall": "npm install -g typescript",
+    "preinstall": "npm install -g typescript",
+    "compile": "ts-node build.ts && tsc",
     "start": "npm run build-ts && npm run start-app",
-    "build-ts": "npm run postinstall && tsc",
+    "build-ts": "npx tsc",
     "start-app": "node dist/server.js"
   },
   "keywords": [],
