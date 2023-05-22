@@ -8,7 +8,7 @@
     "preinstall": "npm install -g typescript",
     "compile": "ts-node build.ts && tsc",
     "start": "npm run build-ts && npm run start-app",
-    "build-ts": "npx tsc",
+    "build-ts": "./node_modules/typescript/bin/tsc",
     "start-app": "node dist/server.js"
   },
   "keywords": [],
