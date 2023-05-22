@@ -1,10 +1,10 @@
 import mongoose, { ConnectOptions } from "mongoose";
 
-const DB_NAME = process.env.DB_NAME || "node-graph";
-const DB_USERNAME = process.env.DB_USERNAME || "";
-const DB_PASSWORD = process.env.DB_PASSWORD || "";
-const DB_HOST = process.env.DB_HOST || "127.0.0.1";
-const DB_PORT = process.env.DB_PORT || "27017";
+const DB_NAME = process.env.DB_NAME || "azure-node-graph";
+const DB_USERNAME = process.env.DB_USERNAME || "nitya-tech-cosmos";
+const DB_PASSWORD = process.env.DB_PASSWORD || "p3Ak7x7loYehq7OVGaseu4Wv1gTuKSVJDlLsMB1278iXdRAHTo230WT6WMtQeSaM18bCb1tbziLEACDb7vqYBg==";
+const DB_HOST = process.env.DB_HOST || "nitya-tech-cosmos.mongo.cosmos.azure.com";
+const DB_PORT = process.env.DB_PORT || "10255";
 
 const url = `mongodb://${DB_HOST}:${DB_PORT}/${DB_NAME}?ssl=true`;
 
